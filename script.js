@@ -25,6 +25,6 @@ document.querySelector('.container').appendChild(botaomudar);
 
 botaomudar.addEventListener('click', function(){
   for(let i=0;i <mensagens.length;i++){
-    mensagens[i].textContent='Frase modificada ${i +1} utilizando JS!'
+    mensagens[i].textContent=`Frase modificada ${i +1} utilizando JS!`
 }
 });
