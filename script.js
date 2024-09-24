@@ -21,10 +21,10 @@ const mensagens=document.getElementsByClassName('mensagem2');
 
 const botaomudar=document.createElement('button');
 botaomudar.textContent='Modificar as frases';
-document.querySelector('.container').appendChid(botaomudar);
+document.querySelector('.container').appendChild(botaomudar);
 
 botaomudar.addEventListener('click', function(){
   for(let i=0;i <mensagens.length;i++){
-    mensagens[i].textContent='Frase modificada S{i +1} utilizando JS!'
+    mensagens[i].textContent='Frase modificada ${i +1} utilizando JS!'
 }
 });
